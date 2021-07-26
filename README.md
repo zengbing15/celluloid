@@ -1,2 +1,2 @@
-# deploy-tool-haku
-Deploy CKB scripts tool: HaKu
+# celluloid
+Deploy CKB scripts tool: celluloid
