@@ -1,0 +1,26 @@
+{
+  "name": "celluloid",
+  "version": "0.0.1",
+  "description": "the MVP version of CKB-deploy-tool",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app",
+    "dev": "nodemon app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zengbing15/celluloid.git"
+  },
+  "author": "zengbing",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zengbing15/celluloid/issues"
+  },
+  "homepage": "https://github.com/zengbing15/celluloid#readme",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "path": "^0.12.7"
+  }
+}
