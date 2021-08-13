@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./normalize.css" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Traditional</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-center">
+        <h5>CKB-Depoly-Tool</h5>
+        <div>
+          <!-- <a href="https://github.com/nervosnetwork/ckb/releases">CKB binary </a> -->
+          <a href="https://github.com/zengbing15/celluloid">Github repo </a>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <form action="/submit" method="POST">
+        <h3>Deploy info</h3>
+        <div class="form-row">
+          <label for="address"> enter testnet address </label>
+          <input type="text" name="address" id="address" autocomplete="false" />
+        <br />
+        <br />
+          <label for="arg"> enter lock_arg </label>
+          <input type="text" name="arg" id="arg" autocomplete="false" />
+        <br />
+        <br />
+          <label for="privkey"> enter privkey </label>
+          <input type="text" name="privkey" id="privkey" autocomplete="false" />
+        </div>
+        <button type="Deploy" class="block">deploy</button>
+      </form>
+    </main>
+  </body>
+</html>

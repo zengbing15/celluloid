@@ -1,15 +1,22 @@
 const express = require('express');
-const path = require('path');
-const routes = require('./routes');
-
 const app = express();
+//const people = require('./routes/people');
+const auth = require('./routes/auth');
 
-app.set("port", process.env.PORT || 3000);
-app.set("views", path.join(__dirname, 'views'));
-app.set("view engine", "ejs");
 
-app.use(routes);
+app.use(express.static('./methods-public'));
 
-app.listen(app.get('port'), function() {
-    console.log('Server started on port' + app.get('port'));
-})
+// parse form data , go with urlencoded middleware
+app.use(express.urlencoded({extended: false}));
+
+// parse json 
+app.use(express.json());
+
+// base path: api/people
+//app.use('/api/people',people);
+app.use('/submit',auth);
+
+
+app.listen(5000, ()=>{
+    console.log('Server is listening on port 5000...')
+});
